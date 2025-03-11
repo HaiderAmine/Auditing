@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_box"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="pwd" 
+            android:typeface="monospace"
+            android:textSize="20sp"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/exe_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="▶" 
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/cmd_up_button"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="^"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/cmd_down_button"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="v"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <Button
+            android:id="@+id/tab_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="tab" 
+            android:textSize="14sp" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+      <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+        <TextView
+          android:id="@+id/output_box"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:text=""
+          android:textIsSelectable="true"  />
+      </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

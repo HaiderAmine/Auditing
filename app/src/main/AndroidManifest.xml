@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Permissions -->
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET"/>
+    
+  <application
+      android:allowBackup="true"
+      android:icon="@drawable/icon"
+      android:label="@string/app_name"       android:roundIcon="@drawable/icon"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+
+      <!-- Main Activity -->
+      <activity 
+           android:name=".MainActivity"
+           android:exported="true"
+           android:resizeableActivity="true"
+           android:supportsPictureInPicture="true"
+           android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation">
+          <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>
+      </activity>
+      <activity android:name=".CmdActivity">
+      </activity>
+      <activity android:name=".TextualDataActivity">
+      </activity>
+      <activity android:name=".DirectoryActivity">
+      </activity>
+  </application>
+</manifest>

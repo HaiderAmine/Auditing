@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-merged_res-4:/drawable_icon.png.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-main-5:/drawable/icon.png"
+    },
+    {
+        "merged": "myApps.Auditing.app-merged_res-4:/layout_layout_cmd.xml.flat",
+        "source": "myApps.Auditing.app-main-5:/layout/layout_cmd.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-merged_res-4:/layout_layout_directory.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-main-5:/layout/layout_directory.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-merged_res-4:/layout_layout_textual.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-main-5:/layout/layout_textual.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-merged_res-4:/layout_layout_main.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-main-5:/layout/layout_main.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-merged_res-4:/layout_layout_cmd.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-main-5:/layout/layout_cmd.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-merged_res-4:/layout_list_item_layout.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/8.12/myApps.Auditing.app-main-5:/layout/list_item_layout.xml"
+    }
+]

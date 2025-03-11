@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+rootProject.name = 'Auditing'
+include ':app'

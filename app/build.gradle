@@ -1,0 +1,49 @@
+plugins {
+  id 'com.android.application'
+  id 'com.chaquo.python'
+}
+android {
+    namespace = 'myApps.Auditing'
+    compileSdk = 31
+    ndkPath = '/data/data/com.termux/files/home/ndk-aarch64'
+    defaultConfig {
+        applicationId 'myApps.Auditing'
+        minSdk = 31
+        targetSdk = 31
+        versionCode 1
+        versionName '1.0'
+        ndk {
+            abiFilters 'arm64-v8a', 'x86_64'
+        }
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile  file('/data/data/com.termux/files/home/Auditing/my-release-key.jks')
+            storePassword 'hamoucha'
+            keyAlias 'myAlias'
+            keyPassword 'hamoucha'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig = signingConfigs.release
+        }
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+chaquopy {
+    defaultConfig {
+        version = "3.12"
+        pip {
+            install "pytubefix"
+        }
+    }
+}

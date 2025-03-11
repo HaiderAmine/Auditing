@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "myApps.Auditing.app-merged_res-4:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/Auditing/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "45",
+                        "endOffsets": "57"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                },
+                {
+                    "source": "/data/data/com.termux/files/home/Auditing/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "58",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "138"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "101",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "181"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auditing</string>
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        
+    </style>
+</resources>

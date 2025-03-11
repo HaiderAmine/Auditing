@@ -1,0 +1,4 @@
+#Mon Mar 10 20:41:20 GMT 2025
+base.0=/data/data/com.termux/files/home/Auditing/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
