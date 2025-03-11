@@ -92,7 +92,23 @@ class AudioPlayer {
   public static void play()
 }
 class AuditingManager() {
-  static void createAudio(String textualData) throws TextualDataException;
+  static void load()
+  static void addFile(String filePath, boolean copy) throws IOException
+  static void newAudio(String textualData) throws TextualDataException
+  static void editAudio(Audio audio, String textualData) throws TextualDataException
+  static String audioData(Audio audio)
+  static Audio[] findAudio(String title)
+  static Audio findAudioById(int id)
+
+class FileManager {
+  static boolean write(String absulotePath, String data, boolean isAppend)
+  static boolean write(String absolutePath, String data)
+  static boolean append(String absolutePath, , String data)
+  static String readFile(String absulotePath)
+  static boolean writeBytes(String absulotePath, Object obj)
+  static boolean appendBytes(String absolutePath, Object obj)
+  static ArrayList<Object> readBytes(String absolutePath)
+  static boolean replaceFile(String newFile, String oldFile)
 }
 ```
 
