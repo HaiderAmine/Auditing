@@ -1,7 +1,0 @@
-myApps.Auditing.app-pngs-0 /data/data/com.termux/files/home/Auditing/app/build/generated/res/pngs/release
-myApps.Auditing.app-resValues-1 /data/data/com.termux/files/home/Auditing/app/build/generated/res/resValues/release
-myApps.Auditing.app-packageReleaseResources-2 /data/data/com.termux/files/home/Auditing/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
-myApps.Auditing.app-packageReleaseResources-3 /data/data/com.termux/files/home/Auditing/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
-myApps.Auditing.app-merged_res-4 /data/data/com.termux/files/home/Auditing/app/build/intermediates/merged_res/release
-myApps.Auditing.app-main-5 /data/data/com.termux/files/home/Auditing/app/src/main/res
-myApps.Auditing.app-release-6 /data/data/com.termux/files/home/Auditing/app/src/release/res
