@@ -50,7 +50,7 @@ ffmpeg -i input.mp3 -filter:a "atempo=2.0,atempo=2.0" output.mp3
 
 ```plain
 HH: ≥ 0
-<Time> = 1000 /*(ms)*/ | 0:11 | 00:59 | 0:58:1 | 00:03:01 | 0:2:4.0000 | END | -89000/*END-(ms)*/ | -0:11
+<Time> = 1000 /*(ms)*/ | 0:11 | 00:59 | 0:58:1 | 00:03:01 | 0:2:4.0000 | END/*==-1*/ | -89000/*==END-(ms)*/ | -0:11
 
 AUDIO_TITLE
  FILE_NAME_1
