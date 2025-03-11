@@ -83,107 +83,17 @@ AUDIO_TITLE in PATH/OF/PLAYLIST
 ```
 ---
 ```java
+class AudioPlayer {
+  public static int getCurrentTime()
+  public static int getDuration()
+  public static boolean setTime(int ms)
+  public static void playAudio(Audio audio)
+  public static void pause()
+  public static void play()
+}
 class AuditingManager() {
   static void createAudio(String textualData) throws TextualDataException;
 }
-```
-
-#### cut IO
-if (audioFile and audioUrl):
- if (my platform):
-   remove old
-   upload new
-else:
-  search for invisible CUT obj (same Url)
-  , sync cut Time,
-- exemple
-```
-cut0 [1-100] Url=""
-cut1 [1-70] <- cut0 [1-50, 70-90]
-cut2 [1-30] <- cut1 [20-30, 50-70] #= cut0 [20-30, 70,90]
-Un-download cut2:
-re-download cut2:
- look on cut1
-  look on cut0
-  download
-  cutting io
- 
- splits
- 
-```
-```java
-private class AudioSourceCut{
-  int start, end;
-}
-class AudioSource {
-URL url; 
-ArrayList<AudioSourceCut> cuts = new ArrayList<AudioSourceCut>();
-}
-class AudioFile {
-AudioFile source = null; //external source
-String filePath; //internal source
-void cutOut(int s, int e) {
-  if (source != null) {
-    int dis = 0;
-    for (int i=0;i++)
-      if (i=0) dis = cuts[i].start;
-      else
-       dis+= cuts[i].start-cuts[i-1].end
-  #resize if into:
-  if (s+dis > start & <= end)
-    start = s+dis
-  if (e+dis >= start & < end)
-    end = e+dis
-
-  if (start == end) #remove cut
-      
-    }
-  }
-}
-}
-```
-```
-cut0 [0-100] Url=""
-cut1 [0-70] <- cut0 [1-50, 70-90]
-cut2 [0-30] <- cut1 [20-30, 50-70] #= cut0 [20-30, 70,90]
-
-cutOut(s)
-[20-30, 50-70] -> [20-30, 70,90]
-
-cutOut(1) [20-30]
-
-```
-
-```
-have [0-100]
-cutOut [20-70] -> [20-70]
-have [0-50]
-cutOut [20-30] -> [40-50]
-int dis = 0;
-for (int i=0;i++)
-  if (i=0) dis = cuts[i].start;
-  else
-    dis+= cuts[i].start-cuts[i-1].end
-  #resize if into:
-  if (s+dis > start & <= end)
-    start = s+dis
-  if (e+dis >= start & < end)
-    end = e+dis
-
-  if (start == end) remove cut
-
-
-```
-
-```
-# into
-    [====]
-  [==========] -> [====]
-
-# part into
-    [====]
- [====][====] -> [==][==]
-
 ```
 
 ---
