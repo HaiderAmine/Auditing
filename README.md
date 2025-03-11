@@ -111,6 +111,23 @@ class FileManager {
   static boolean replaceFile(String newFile, String oldFile)
 }
 ```
+```java
+CmdActivity.addCmd("play (id:<num>|title:<str>) [s:<num> [e:<num>]]" , new Executable() {
+  @Override
+  public void run(String args[], String targs[]) {
+
+  }
+});
+/* generate this commands:
+ play id:<num>
+ play id:<num> s:<num>
+ play id:<num> s:<num> e:<num>
+ play title:<str>
+ play title:<str> s:<num>
+ play title:<str> s:<num> e:<num>
+*/
+```
+
 
 ---
 ##### problems and its fix:
